@@ -15,6 +15,10 @@
 		ABAB3FFF25CF325F0046201B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABAB3FFD25CF325F0046201B /* LaunchScreen.storyboard */; };
 		ABAB400A25CF32600046201B /* listasFiltradasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAB400925CF32600046201B /* listasFiltradasTests.swift */; };
 		ABAB401525CF32600046201B /* listasFiltradasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAB401425CF32600046201B /* listasFiltradasUITests.swift */; };
+		ABAB402625CF38F20046201B /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAB402525CF38F20046201B /* Item.swift */; };
+		ABAB402B25CF39E40046201B /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAB402A25CF39E40046201B /* ImageService.swift */; };
+		ABAB403525CF3A710046201B /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAB403425CF3A710046201B /* Post.swift */; };
+		ABAB403B25CF3DD90046201B /* IPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAB403A25CF3DD90046201B /* IPost.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		ABAB401025CF32600046201B /* listasFiltradasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = listasFiltradasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABAB401425CF32600046201B /* listasFiltradasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listasFiltradasUITests.swift; sourceTree = "<group>"; };
 		ABAB401625CF32600046201B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABAB402525CF38F20046201B /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		ABAB402A25CF39E40046201B /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		ABAB403425CF3A710046201B /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		ABAB403A25CF3DD90046201B /* IPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPost.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,9 @@
 		ABAB3FF125CF325C0046201B /* listasFiltradas */ = {
 			isa = PBXGroup;
 			children = (
+				ABAB403925CF3DC10046201B /* Protocols */,
+				ABAB403025CF3A040046201B /* Objects */,
+				ABAB402F25CF39EB0046201B /* UIObjects */,
 				ABAB3FF225CF325C0046201B /* AppDelegate.swift */,
 				ABAB3FF425CF325C0046201B /* SceneDelegate.swift */,
 				ABAB3FF625CF325C0046201B /* ViewController.swift */,
@@ -126,6 +137,31 @@
 				ABAB401625CF32600046201B /* Info.plist */,
 			);
 			path = listasFiltradasUITests;
+			sourceTree = "<group>";
+		};
+		ABAB402F25CF39EB0046201B /* UIObjects */ = {
+			isa = PBXGroup;
+			children = (
+				ABAB402525CF38F20046201B /* Item.swift */,
+			);
+			path = UIObjects;
+			sourceTree = "<group>";
+		};
+		ABAB403025CF3A040046201B /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				ABAB402A25CF39E40046201B /* ImageService.swift */,
+				ABAB403425CF3A710046201B /* Post.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		ABAB403925CF3DC10046201B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				ABAB403A25CF3DD90046201B /* IPost.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +295,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABAB3FF725CF325C0046201B /* ViewController.swift in Sources */,
+				ABAB403B25CF3DD90046201B /* IPost.swift in Sources */,
+				ABAB402625CF38F20046201B /* Item.swift in Sources */,
 				ABAB3FF325CF325C0046201B /* AppDelegate.swift in Sources */,
+				ABAB403525CF3A710046201B /* Post.swift in Sources */,
+				ABAB402B25CF39E40046201B /* ImageService.swift in Sources */,
 				ABAB3FF525CF325C0046201B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
